@@ -1,6 +1,6 @@
 class TasksController < ApplicationController
     def index
-        @tasks = Task.order(id: :desc).page(params[:page]).per(3)
+        @tasks = Task.order(id: :desc).page(params[:page]).per(100)
     end
     
     def create 
